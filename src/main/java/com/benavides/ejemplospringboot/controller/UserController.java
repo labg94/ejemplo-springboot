@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("user")
-public class ExampleController {
+public class UserController {
 
 
     private final UserService userService;
@@ -18,6 +18,8 @@ public class ExampleController {
 
     @PostMapping
     public User save(@RequestBody User user) {
+
+
         return userService.saveUser(user);
     }
 
